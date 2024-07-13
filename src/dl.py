@@ -1,4 +1,4 @@
-import os
+ import os
 import json
 import time
 import pprint
@@ -8,7 +8,9 @@ import numpy as np
 import seaborn as sns
 import keras.callbacks as ckbs
 import matplotlib.pyplot as plt
-from keras.utils import np_utils
+from . import np_utils  
+from keras.utils.np_utils import to_categorical
+#from keras.utils import np_utils
 from keras.preprocessing import sequence
 from sklearn.preprocessing import LabelEncoder
 from keras.preprocessing.text import Tokenizer
