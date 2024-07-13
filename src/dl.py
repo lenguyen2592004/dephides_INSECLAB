@@ -8,7 +8,7 @@ import numpy as np
 import seaborn as sns
 import keras.callbacks as ckbs
 import matplotlib.pyplot as plt
-from . import np_utils  
+#from . import np_utils  
 from keras.utils.np_utils import to_categorical
 #from keras.utils import np_utils
 from keras.preprocessing import sequence
