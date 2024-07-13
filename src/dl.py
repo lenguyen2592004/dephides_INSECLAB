@@ -54,10 +54,10 @@ class PhishingUrlDetection:
         self.params['test_case'] = args.test_case_name
         self.params['epoch'] = int(args.epoch)
         self.params['architecture'] = args.architecture
-        self.params['batch_train'] = args.batch_size
-        self.params['batch_test'] = args.batch_size
-        self.params['result_dir'] = "./content/dephides_INSECLAB/test_results/custom/{}/".format(args.architecture)
-
+        self.params['batch_train'] = args.batch_size 
+        self.params['batch_test'] = args.batch_size        
+        print("./dephides_INSECLAB/test_results/custom/{}/".format(args.architecture))
+        self.params['result_dir'] = "./dephides_INSECLAB/test_results/custom/{}/".format(args.architecture)
         if not os.path.exists(self.params['result_dir'] ):
             os.mkdir(self.params['result_dir'] )
             print("Directory ", self.params['result_dir'] , " Created ")
